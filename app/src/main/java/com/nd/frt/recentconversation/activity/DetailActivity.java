@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-
 import com.bumptech.glide.Glide;
 import com.nd.frt.recentconversation.R;
 import com.nd.frt.recentconversation.model.UserInfo;
@@ -37,7 +36,6 @@ public class DetailActivity extends AppCompatActivity {
         final Intent intent = getIntent();
         mUserInfo = ((UserInfo) intent.getSerializableExtra(PARAM_USER_INFO));
         mUserIndex =  intent.getIntExtra(PARAM_USER_INDEX,0);
-
         supportActionBar.setTitle(mUserInfo.userName);
         supportActionBar.setSubtitle(mUserInfo.content);
         final EditText etUserName = findViewById(R.id.etUserName);

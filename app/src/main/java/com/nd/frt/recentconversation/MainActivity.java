@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         UserInfoService userInfoService = new UserInfoService();
         List<UserInfo> userInfos = userInfoService.getUserInfos(this);
-        RecyclerView recy_list = findViewById(R.id.recy_list);
+        RecyclerView recy_list = findViewById(R.id.recyList);
         recy_list.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
         mUserAdapter = new UsersAdapter(userInfos);
         recy_list.setAdapter(mUserAdapter);

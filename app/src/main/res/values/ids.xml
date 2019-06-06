@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="menu_main" type="id" />
+    <item name="recyList" type="id" />
 </resources>
